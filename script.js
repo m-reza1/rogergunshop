@@ -49,21 +49,20 @@ function renderProducts() {
     });
 }
 
-// fungsi untuk mengedit produk
+// fungsi untuk mengedit submit button
 function editProduct(index) {
     const product = productList[index];
     document.getElementById('productName').value = product.name;
     document.getElementById('productPrice').value = product.price;
-    editIndex = index; // menyimpan index produk yang sedang diedit
+    editIndex = index; 
 
-    // mengubah tombol 'tambah produk' menjadi 'edit produk'
-    document.getElementById('submitButton').textContent = 'edit produk';
+    document.getElementById('submitButton').textContent = 'Edit Product';
 }
 
 // fungsi untuk membuka modal konfirmasi hapus produk
 function openDeleteModal(index) {
     deleteIndex = index;
-    document.getElementById('deleteModal').style.display = 'flex'; // menampilkan modal konfirmasi
+    document.getElementById('deleteModal').style.display = 'flex'; 
 }
 
 // fungsi untuk menghapus produk
