@@ -19,7 +19,7 @@ let deleteIndex = null;
         // jika editIndex tidak null, berarti mengupdate produk
         productList[editIndex] = { name, price };
         editIndex = null; // reset editIndex setelah pembaruan
-        document.getElementById('submitButton').textContent = 'tambah produk'; // ubah tombol kembali ke "tambah produk"
+        document.getElementById('submitButton').textContent = 'Add Product'; // ubah tombol kembali ke "tambah produk"
     } else {
         // jika tidak ada editIndex, berarti menambah produk baru
         productList.push({ name, price });
